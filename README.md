@@ -13,7 +13,7 @@ API para gestionar **proveedores** (`/api/vendors`) y **planes** (`/api/plans`).
 
 ## Instalación
 ```bash
-git clone https://github.com/[tu-usuario]/[tu-repo].git
+git clone [https://github.com/[tu-usuario]/[tu-repo].git](https://github.com/aeviloria93/aplicaciones_hibridas_parcial_1.git)
 cd [completar]
 npm install
 
