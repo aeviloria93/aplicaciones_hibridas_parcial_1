@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>API Protec-Viotic</title>
+  <link rel="stylesheet" href="../public/css/style.css" />
+</head>
+<div class="header"><h1>Protec-Viotic</h1> <p>Protege tu vida</p></div>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card1">
+        <h2>¿De que trata?</h2>
+        <p>Esta Api lista todos los planes para proteger tu equipo y todo lo relacionado con tu informacion digital</p>
+        <p>Va desde los <strong> vendors</strong> que son la empresa o el proveedor y por otro lado los <strong>planes</strong> que refiere a que ofrece cada uno de ellos</p>
+      </div>
+      <hr>
+      <div class="card1">
+        <h2>Informacion disponible</h2>
+          <ul>
+            <li>Lista de usuarios</li>
+            <li>Lista de proveedores</li>
+            <li>Lista de planes</li>
+          </ul>
+      </div>
+      <hr>
+
+      <h2>¿Como probar la API?</h2>
+      <p>Para probar la API proveemos los siguientes endpoints:</p>
+
+      <h3>Ususarios:</h3>
+      <div class="card2">
+        <ul class="endpoint-list">
+          <li><span class="method get">GET</span> <a href="/api/users">/api/users</a></li>
+          <li><span class="method get">GET</span> <a href="/api/users/:id">/api/users/:id</a></li>
+          <li class="endpoint">
+            <div class="endpoint-header">
+              <span class="badge method-post">POST</span>
+              <a class="path" href="/api/users">/api/users</a>
+            </div>
+            <details class="endpoint-body">
+              <summary>Ejemplo de body</summary>
+              <pre class="code json">
+                {
+                  "name": "Prueba",
+                  "email": "prueba@example.com",
+                  "password": "secreto456",
+                  "role": "user",
+                  "active": true
+                }</pre>
+              </details>
+          </li>
+
+
+          <li><span class="method get">PUT</span> <a href="/api/users/:id">/api/users/:id</a></li>
+          <li><span class="method get">DELETE</span> <a href="/api/users/:id">/api/users/:id</a></li>
+        </ul>
+
+      </div>
+      <hr>
+
+      <h3>Vendors:</h3>
+      <div class="card2">
+        <ul class="endpoint-list">
+          <li><span class="method get">GET</span> <a href="/api/vendors">/api/vendors</a></li>
+          <li><span class="method get">GET</span> <a href="/api/vendors/:id">/api/vendors/:id</a></li>
+          <li class="endpoint">
+            <div class="endpoint-header">
+              <span class="badge method-post">POST</span>
+              <a class="path" href="/api/vendors">/api/vendors</a>
+            </div>
+            <details class="endpoint-body">
+              <summary>Ejemplo de body</summary>
+              <pre class="code json">
+                {
+                  "name": "CyberGuard Inc.",
+                  "country": "USA",
+                  "supportEmail": "support@cyberguard.example",
+                  "phone": "(305) 555-1234",
+                  "supportHours": "Mon–Fri 9-18",
+                  "rating": 4.2,
+                  "active": true
+                }
+              </pre>
+              </details>
+          </li>
+          <li><span class="method get">PUT</span> <a href="/api/vendors/:id">/api/users/:id</a></li>
+          <li><span class="method get">DELETE</span> <a href="/api/vendors/:id">/api/users/:id</a></li>
+        </ul>
+
+      </div>
+      <hr>
+
+      <h3>Planes</h3>
+
+            <div class="card2">
+        <ul class="endpoint-list">
+          <li><span class="method get">GET</span> <a href="/api/plans">/api/plans</a></li>
+          <li><span class="method get">GET</span> <a href="/api/plans/:id">/api/plans/:id</a></li>
+          <li class="endpoint">
+            <div class="endpoint-header">
+              <span class="badge method-post">POST</span>
+              <a class="path" href="/api/plans">/api/plans</a>
+            </div>
+            <details class="endpoint-body">
+              <summary>Ejemplo de body</summary>
+              <pre class="code json">
+                {
+                  "name": "Mobile Lite",
+                  "vendorName": "CyberGuard Inc.",
+                  "price": 9.99,
+                  "os": ["android", "ios"],
+                  "rating": 3.9,
+                  "features": ["antivirus", "antiphishing"],
+                  "description": "Protección esencial para móviles."
+                }
+</pre>
+              </details>
+          </li>
+          <li><span class="method get">PUT</span> <a href="/api/plans/:id">/api/users/:id</a></li>
+          <li><span class="method get">DELETE</span> <a href="/api/plans/:id">/api/users/:id</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+    
+  </div>      
+ <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-title">API Protec-Viotic</p>
+
+      <ul class="footer-meta">
+        <li><strong>Nombre:</strong> Alejandro Rivera</li>
+        <li><strong>Materia:</strong> Aplicaciones Híbridas</li>
+        <li><strong>Docente:</strong> Cruz Jonathan Emanuel </li>
+        <li><strong>Comisión:</strong> DWN4AV</li>
+      </ul>
+
+      <p class="footer-copy">© <span id="year"></span> Protec-Viotic</p>
+    </div>
+  </footer>
+</body>
+</html>
